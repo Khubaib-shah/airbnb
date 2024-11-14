@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+* {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif,
+    Courier, monospace;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  @apply w-full border my-1 py-2 px-3 rounded-2xl;
+}
+button {
+  @apply bg-gray-300;
+}
+button.primary {
+  background-color: "#f5385d";
+  @apply bg-primary w-full text-white rounded-lg p-2;
+}
